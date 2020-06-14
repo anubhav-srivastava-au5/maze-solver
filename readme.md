@@ -35,7 +35,7 @@ Given a maze, NxN matrix.we have to find a path from source to destination.
 ----------
 maze[0][0] (left top corner)is the source and maze[N-1][N-1](right bottom corner) is destination. 
 ------------
-There are few cells which are blocked, means we cannot enter into those cells. we can move in any direction ( left, right, up and down).
+There are few cells which are blocked, means we cannot enter into those cells. we can move in two direction ( forward and down).
 ---------------
 •Create a solution matrix of the same structure as maze.
 -----------------
@@ -54,15 +54,7 @@ print the solution matrix.
 -----------
 •Mark the current cell in solution matrix as -1
 -------------
-•If previous step is not in vertical direction (upwards) then move forward in the 
-vertical direction(downwards) and recursively check if this movement leads to solution.
-​
--------------
-•If movement in above step doesn’t lead to the solution and If previous step is not in horizontal direction (towards left) then move forward in the horizontal direction(towards right) and recursively check if this movement leads to solution.
-------------
-•If movement in above step doesn’t lead to the solution and If previous step is not in vertical direction (downwards) then move forward in the horizontal direction(upwards) and recursively check if this movement leads to solution.
------------------
-•If movement in above step doesn’t lead to the solution and If previous step is not in horizontal direction (towards right) then move forward in the horizontal direction(towards left) and recursively check if this movement leads to solution.
+• Form a recursive function, which will follow a path and check if the path reaches the destination or not. If the path does not reach the destination then backtrack and try other paths.
 ------------
 ​
 •If none of the above solution works then BACKTRACK and mark the current cell as 0.
