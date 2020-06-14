@@ -87,7 +87,7 @@ Output:-
 ​
 Instructions to execute the file:-
 ----------------------------------
- • open : https://github.com/anubhav-srivastava-359/maze_solver
+ • open : https://github.com/anubhav-srivastava-au5/maze-solver
 ​
 ​
 •	From github repo copy the code of the file to any python editor and save the file in certain folder.
