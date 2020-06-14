@@ -1,13 +1,11 @@
-
+import linecache
 # ----------------------------------INPUT----------------------------------
 
 input_file = open("inputfile.txt","w")
 input_file.write(input())
 input_file.close()
 
-input_file = open("inputfile.txt","r")
-N = input_file.readline()
-input_file.close()
+N=linecache.getline("inputfile.txt", 1)
 
 input_file = open("inputfile.txt","a")
 input_file.write('\n')
